@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/c"
+    tools:context=".game_manual">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20pt"
+            android:text="게임 설명" />
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="당신은 추격자 입니다. 도망가는 범인을 추격하세요!!" />
+
+        <TextView
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="각 카드에는 숫자 하나가 적혀있습니다" />
+
+        <TextView
+            android:id="@+id/line7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="카드 더미에는 4~41번까지의 카드가 존재합니다" />
+
+        <TextView
+            android:id="@+id/line8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="42번 카드는 범인이 가지고 있습니다" />
+
+        <TextView
+            android:id="@+id/line9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="범인이 카드 3장을 내려놓으며 게임을 시작합니다." />
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/red"
+            android:text="범인이 카드 3장을 내려놓으며 게임을 시작합니다." />
+
+
+        <TextView
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="당신은 카드 2장을 원하는 더미에서 뽑은 후 범인이 내려놓은 카드를 추리합니다" />
+
+        <TextView
+            android:id="@+id/line13"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="당신이 뽑은 카드들은 범인에게 없는 카드입니다" />
+
+        <TextView
+            android:id="@+id/line14"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="뽑은 카드는 좌측 아래에 숫자로 표시되며 최대 12장까지 뽑을 수 있습니다." />
+
+        <TextView
+            android:id="@+id/line6"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="당신이 추리한 카드가 보드에 있다면 해당 카드를 공개하고 한번 더 추리 할 수 있습니다" />
+
+        <TextView
+            android:id="@+id/line10"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="추리가 틀렸다면 범인은 한장의 카드를 더 내려 놓습니다" />
+
+        <TextView
+            android:id="@+id/line11"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="이후 당신은 한 장의 카드를 뽑은 후 추리할 수 있으며, 이와 같은 방법으로 반복합니다" />
+
+        <TextView
+            android:id="@+id/line12"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="42번 카드를 먼저 내려놓는다면 범인의 승리,그 이전에 내려논 카드를 모두 공개한다면 당신의 승리입니다" />
+
+        <Button
+            android:id="@+id/startgame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="게임시작" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
