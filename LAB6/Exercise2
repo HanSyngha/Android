@@ -1,0 +1,54 @@
+class Worker{
+	String name;
+	int salary_rate;
+	public Worker(String name, int salary_rate){
+		this.name = name;
+		this.salary_rate = salary_rate;
+	}
+	public String toString(){
+		return name;
+	}
+	public double computePay(int hours){
+		return hours * salary_rate;
+	}
+}
+
+class HourlyWorker extends Worker{
+	public HourlyWorker(String name, int salary_rate){
+		super(name,salary_rate);
+	}
+	public String toString(){
+		return "Hourly Worker " + name;
+	}
+	public double computePay(int hours){
+		if(hours<=40){
+			return salary_rate * hours;
+		}
+		else{
+			return ( 40 * salary_rate ) + ( hours - 40 ) * (salary_rate * 1.5 );
+		}
+	}
+}
+
+class SalariedWorker extends Worker{
+	public SalariedWorker(String name, int salary_rate){
+		super(name,salary_rate);
+	}
+	public String toString(){
+		return "Salaried Worker " + name;
+	}
+	public double computePay(int hours){
+		return salary_rate * 40;
+	}
+}
+
+public class Main{
+	public static void main(String[] args){
+		HourlyWorker H1 = new HourlyWorker("Hyunwoong",11000);
+		SalariedWorker S1 = new SalariedWorker("Jinseok",8750);
+		System.out.println(H1.toString());
+		System.out.println(S1.toString());
+		System.out.printf("%s worked %d hours and was paied %.0f won\n",H1.toString(),45,H1.computePay(45));
+		System.out.printf("%s worked %d hours and was paied %.0f won\n",S1.toString(),45,S1.computePay(45));
+	}
+}
