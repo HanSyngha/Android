@@ -12,4 +12,7 @@ The projects were about<br><br>
 5. Key-value storage
 6. Java
 7. Using the Android-studio
-8. Our own application
+8. Our own application<br><br>
+
+The Application Game Witch I made is the mobile version of the bord game 'Fugitive'<br>
+You can find the codes and discription in 'The Runner' floder
